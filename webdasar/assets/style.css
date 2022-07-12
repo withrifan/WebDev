@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+body {
+	background: #b6b6b6;
+	font-family: 'Source Code Pro', monospace;
+	word-wrap: break-word;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+main {
+   padding: 30px;
+   overflow: auto;
+}
+
+
+.logo {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 70px;
+	font-weight: bold;
+	color: orange;
+	background: #424549;
+	padding-left: 10px;
+	}
+
+.fontnav {
+	display: flex;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 18px;
+	font-weight: normal;
+   	padding: 30px;
+   	background-color: #00c8eb;
+   	justify-content: center;
+}
+
+
+li {
+	text-decoration: none;
+	color: orange;
+	position: relative;
+}
+
+
+li:after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: orange;
+	left: 0;
+	bottom: -10px;
+	border-radius: 50%;
+	opacity: 0;
+	transition: 0.4s;
+}
+
+li:hover:after {
+		left: 45%;
+		opacity: 1;
+}
+
+nav {
+	display: flex;
+   	background-color: #00a2c6;
+} 
+
+nav a {
+   font-size: 20px;
+   text-decoration: none;
+   color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #424549;
+}
+
+
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 7px;
+}
+
+
+#konten {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+
+.content {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+	overflow: auto;
+	background: #7e7e7e;
+}
+
+.content:hover {
+	box-shadow: 0 2px 25px 0 rgb(128, 236, 255);
+	transform: translate(0, -5px);
+}
+
+.fonth2 {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 30px;
+	font-weight: bold;
+	color: orange;
+	text-align: left;
+	}
+
+
+.fonth3 {
+	font-family: sans-serif;
+	color: orange;
+}
+
+
+.aturgambar{
+	max-width: 70%;
+	min-width: 50%;
+	height: auto;
+}
+
+.fontp {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 15px;
+	color: white;
+}
+
+.fontprofile {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 35px;
+	font-weight: bold;
+	color: orange;
+}
+
+.aturberanda {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    padding-top: 200px;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+	overflow: auto;
+	background: #424549;
+	width: 100%;
+}
+
+.aturberanda:hover {
+	font-weight: bold;
+	box-shadow: 0 2px 25px 0 rgb(128, 236, 255);
+	transform: translate(0, -5px);
+}
+
+
+
+.kontenkelas {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    padding: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+	overflow: auto;
+	background: #424549;
+	width: 100%;
+}
+
+.kontenkelas:hover{
+	font-weight: bold;
+	box-shadow: 0 2px 25px 0 rgb(128, 236, 255);
+	transform: translate(0, -6px);
+}
+
+.fotosaya {
+	width: 30%;
+	height: auto;
+	border-radius: 10%;
+
+}
+
+.aturprofile {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 50px;
+    padding-bottom: 50px;
+ 	padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-width: 800px;
+    height: auto;
+    color: white;
+    background: #616161;
+    float: left;
+
+}
+
+.aturprofile:hover {
+	box-shadow: 0 2px 25px 0 rgb(128, 236, 255);
+	font-weight: bold;
+	transform: translate(0, -5px);
+}
+
+#tabel {
+	text-align: justify;
+}
+
+.follow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 30%;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    height: auto;
+    background: #ffffff;
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.follow:hover {
+	box-shadow: 0 2px 25px 0 rgb(128, 236, 255);
+	font-weight: bold;
+	transform: translate(0, -5px);
+}
+
+.aturfollow {
+	color: black;
+	float: left;
+	text-decoration: none;
+}
+
+#tombolpanah {
+	position: fixed;
+	float: right;
+	bottom: 40px;
+	right: 10px;
+}
+
+#tombolpanah:hover {
+	background: #80ecff;
+	box-shadow: 0 2px 25px 0 rgb(128, 236, 255);
+	transform: scale(1.1);
+}
+
+.sosialicon {
+	margin-left: 4px;
+
+}
+
+footer {
+	font-family: 'Source Code Pro', monospace;
+	padding: 50px;
+	color: white;
+	background-color: #00a2c6;
+    text-align: center;
+    font-weight: normal;
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+   main,
+   aside,
+   .follow {
+       width: 100%;
+       padding: 4px;
+   }
+}
